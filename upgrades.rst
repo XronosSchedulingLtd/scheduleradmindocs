@@ -258,7 +258,7 @@ If you have set yourself up with a test system then you can short-circuit
 this process by trying the update on your test system first.  If all the
 database migrations run without error then it will be fine to go straight
 from your start version to your target version (but see note about v0.28.3
-below.
+below).
 
 --------------------------
 Upgrading from old version
