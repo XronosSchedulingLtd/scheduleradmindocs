@@ -25,6 +25,7 @@ Download this guide as a
 .. toctree::
 
    endofyear
+   upgrades
    contact
 
 
