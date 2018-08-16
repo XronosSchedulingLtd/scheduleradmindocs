@@ -24,6 +24,7 @@ Download this guide as a
 
 .. toctree::
 
+   locations
    endofyear
    upgrades
    contact
