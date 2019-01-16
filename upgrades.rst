@@ -276,6 +276,7 @@ from v0.24 up to the current version:
 * v0.28.3
 * v1.3.1
 * v1.3.2
+* v1.7.0
 
 Follow these and you should be able to get up to date quite quickly,
 but as always, do back up your database before you start.
