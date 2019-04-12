@@ -190,6 +190,6 @@ follows:
 
 * Location record, named BR218
 * Location Alias, also named BR218, linked to the Location BR218
-* Location Alias, also named Library, linked to the Location BR218
+* Location Alias, named Library, linked to the Location BR218
 
 So any future imports will direct all events to the one single location.
