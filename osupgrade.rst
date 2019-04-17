@@ -82,7 +82,7 @@ If you are running your Scheduler installation as some kind of Virtual
 Machine, you might want to take a snapshot of its state before you start.
 That way you have an easy disaster recovery path if things go horribly
 wrong.  In any case, make sure you have a good backup of your database
-and system before you start.
+and system.
 
 You will need to have root access to your system, or at least full
 access to sudo.  All the following assumes you are logged in as an
