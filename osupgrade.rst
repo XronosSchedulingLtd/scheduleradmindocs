@@ -12,7 +12,7 @@ long time.  This makes it ideal for running servers which need to
 Just Work(TM).
 
 However, even Debian releases eventually go out of date and stop
-receiving security fixes, so the point comes where one needs to
+receiving security fixes so the point comes where one needs to
 upgrade.  Debian Jessie is due to reach end of life on 30th June, 2020.
 At the time of writing that's more than a year away, but it does
 no harm to plan ahead.
@@ -22,7 +22,7 @@ Background
 
 Upgrading Debian is generally pretty simple.  You edit /etc/apt/sources.list
 (and all the files under /etc/apt/sources.list.d) changing the name
-of the release that you want, then do:
+of the target release to the one that you want, then do:
 
 ::
 
@@ -58,7 +58,7 @@ out and replaced with MariaDB.  The latter is meant to be a compatible
 replacement, but initial testing quickly threw up a number of incompatible
 changes which mean that it isn't.
 
-To keep Scheduler running properly, you need to keep MySql on your
+To keep Scheduler running properly you need to keep MySql on your
 system, and the following instructions tell you how to do this.
 
 Between Debian 8 and Debian 9 there was also a slight change to how 
@@ -70,7 +70,7 @@ by Phusion (the makers of Passenger) and compiled to include Passenger.
 In Debian 9, this is no longer necessary - you can install the standard
 Nginx packages from the Debian distribution, then add Phusion Passenger
 as a plug-in module.  This is much tidier, but means an extra step is
-needed to undo the way it was installed originally.
+needed to undo the way in which it was installed originally.
 
 Step by step
 ------------
@@ -113,7 +113,7 @@ to do at the weekend, or during a school holiday.
 
   ::
 
-    $ sudo apt-get remove nginx-extras nginx-commong nginx passenger passenger-dev passenger-doc
+    $ sudo apt-get remove nginx-extras nginx-common nginx passenger passenger-dev passenger-doc
 
 - Step 3 - Switch to using non-Debian MySql packages
 
@@ -134,7 +134,7 @@ to do at the weekend, or during a school holiday.
     $ sudo apt-get update
     $ sudo apt-get dist-upgrade
 
-  Because you already have the debian MySql packages installed, the
+  Because you already have the Debian MySql packages installed, the
   last command will upgrade them to the ones provided by MySql
   themselves.
 
