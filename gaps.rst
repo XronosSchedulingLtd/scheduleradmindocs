@@ -58,7 +58,7 @@ There are two special Properties within Scheduler called "Gap" and
 "Suspension" which are used to implement the functionality described
 here.
 
-You should protect these to Properties by setting up users to
+You should protect these two Properties by setting up users to
 control them as detailed in
 :ref:`controls`
 
