@@ -1,3 +1,5 @@
+.. _gaps:
+
 Gaps and Suspensions
 ====================
 

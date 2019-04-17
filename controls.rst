@@ -5,8 +5,8 @@ Concepts
 --------
 
 The working of Scheduler revolves around the concept of resources
-attached to events.  It exists to record when any individual resource
-is busy and when it is free.
+attached to events.  The whole package exists simply to record when
+any individual resource is busy and when it is free.
 
 These resources, can be people, places, or abstract things like
 services or properties.
@@ -51,19 +51,126 @@ for instance - whilst others may be able to cope with several - e.g.
 catering.  It's up to the resource administrator to decide what
 is feasible.
 
+There exist also pooled resources - those where the requirement
+is for one (or more) resources from the pool, but it doesn't actually
+matter to the requester which one is allocated - e.g. minibuses
+Scheduler handles this case through the use of Resource Groups.
+
 
 Adding control
 --------------
 
+The default for any resource in Scheduler is that it is freely
+assignable to events.  Anyone with edit permission can add any resource
+to any event which they can edit.
+
+To put a resource under control, one simply needs to allocate one
+or more controllers to it.  This is done by way of the User editing
+dialogues.
+
+Menu => Admin => Models => Users
+
+.. image:: userlisting.png
+   :scale: 75%
+   :align: center
+
+
+Clicking "Edit" for the user Claire Dunwoody produces the following:
+
+.. image:: clairedunwoody.png
+   :scale: 75%
+   :align: center
+
+Notice that there are two tabs here, labelled "General" and "Concerns".
+Click on the "Concerns" tab to see the existing links between
+CED and resources within the system.
+
+.. image:: cedconcerns.png
+   :scale: 75%
+   :align: center
+
+CED is currently linked to four resources within the system.
+
+- Herself
+- The public calendar
+- Catering
+- Medical
+
+Those last two are Services within the demonstration system.
+
+All of them are currently visible - that is, events involving them
+will appear on her default Scheduler display.
+
+For three of them though she is also listed as being a "Controller".
+This has two effects:
+
+- The corresponding resource is controlled, meaning that it can't
+  just be added to an event by other users - it goes through the
+  permissions process
+- CED can grant permission for such requests
+
+Let's say we want to make CED a controller of minibuses too.
+First she needs a Concern linking her user record to the Minibus
+resource group.  She could add this herself on the main screen,
+but the system administrator can add it here too.
+
+Just type "Minibus" in the "Add concern" box below the Concerns
+listing - the usual predictive text will appear.  Select the
+required item and press Enter.
+
+CED then has an extra Concern, like this:
+
+.. image:: cedaddedminibus.png
+   :scale: 75%
+   :align: center
+
+Click on the "Edit" link for the Minibus concern, and tick the
+"Controls" check box.
+
+.. image:: cedcontrolsmb.png
+   :scale: 75%
+   :align: center
+
+Then click "Save changes" to put your change into effect.
+
+CED is now a controller for the "Minibus" resource, and requests for
+a minibus will come to her.
 
 
 Default resources
 -----------------
 
-Mention default resources which exist in the system to begin with.
+A number of default Properties are created when a new Scheduler
+system is installed.  These are expected to exist for the proper
+running of the system.
 
+Several of these almost certainly need to be given controllers before
+your system goes live.  Specifically:
 
-Pooled resources
-----------------
+- Calendar
+- Suspension
+- Gap
+
+The "Calendar" property is for events which you want to appear in
+your public calendar - events which are to be visible to users
+who have not logged in to your system.  This should be under the
+control of the person who decides what goes in your public calendar.
+
+.. note::
+
+  Although there is just one "Calendar" in a new system, you can create
+  as many public calendars as you like, and you can rename this one.
+  Just create a Property and tick the "Public" check-box for it.
+
+  If you have more than one public calendar in your system, Scheduler
+  let's guests choose which ones they will see.
+
+The Suspension and Gap properties are used to massage the timetable
+as it is imported from your MIS.  For full details see the
+documentation on
+:ref:`gaps`
+
+Again, you don't want ordinary users to be able to allocate these
+properties to their events, so give them a controller.
 
 
