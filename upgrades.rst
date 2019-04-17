@@ -1,5 +1,7 @@
-Software upgrades
-=================
+Upgrading the application
+=========================
+
+...or, upgrading the software of Scheduler itself.
 
 The home of the Scheduler software is
 `GitHub <https://github.com/XronosSchedulingLtd/scheduler>`_
@@ -260,26 +262,3 @@ database migrations run without error then it will be fine to go straight
 from your start version to your target version (but see note about v0.28.3
 below).
 
---------------------------
-Upgrading from old version
---------------------------
-
-So, your installation is way behind and you want to catch up, but the
-last thing which you want to do is go through all the intermediate
-versions one by one.  Here's a list of versions which should get you
-from v0.24 up to the current version:
-
-* v0.24
-* v0.26.2
-* v0.26.3
-* v0.26.4
-* v0.28.3
-* v1.3.1
-* v1.3.2
-* v1.7.0
-
-Follow these and you should be able to get up to date quite quickly,
-but as always, do back up your database before you start.
-
-Note that v0.28.3 in particular has extra instructions (read the
-release notes) because it involves switching to a new version of Ruby.

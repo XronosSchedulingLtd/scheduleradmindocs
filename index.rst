@@ -24,9 +24,13 @@ Download this guide as a
 
 .. toctree::
 
+   controls
    locations
+   gaps
    endofyear
    upgrades
+   rubyupgrade
+   osupgrade
    contact
 
 
