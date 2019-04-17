@@ -214,3 +214,19 @@ to do at the weekend, or during a school holiday.
 
 
 And you should be there!
+
+.. note::
+
+  If you start with a really old installation, it's just possible that
+  your Ruby interpreter won't work after the upgrade because the libraries
+  with which it was built are no longer there.
+
+  If you have this problem you can re-build Ruby really easily with
+  RVM.
+
+  ::
+
+    $ rvm reinstall 2.3.6
+
+  will get things going again.  (Obviously, change the version number
+  to whichever version of Ruby you are currently using.)
