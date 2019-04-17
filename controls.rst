@@ -161,11 +161,11 @@ control of the person who decides what goes in your public calendar.
 .. note::
 
   Although there is just one "Calendar" in a new system, you can create
-  as many public calendars as you like, and you can rename this one.
+  as many public calendars as you like, and you can rename the original one.
   Just create a Property and tick the "Public" check-box for it.
 
   If you have more than one public calendar in your system, Scheduler
-  let's guests choose which ones they will see.
+  lets guests choose which ones they will see.
 
 The Suspension and Gap properties are used to massage the timetable
 as it is imported from your MIS.  For full details see the
