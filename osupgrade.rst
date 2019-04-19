@@ -170,6 +170,33 @@ to do at the weekend, or during a school holiday.
   the upgrade.  The main point for asking for input is between these
   two steps, but it can happen at any point in the upgrade.
 
+  .. note::
+
+    A common message you will get during the upgrade process is
+    one about the installer wanting to overwrite a configuration
+    file with a newer version.  Usually it just goes ahead and does
+    this, but if it thinks it detects that you have modified the
+    current file then it will stop and ask you whether it can
+    overwrite it.
+
+    You can look at differences between the two before making your
+    decision, but there is no option to edit or merge them at that
+    point.
+
+    Whichever way you decide it will keep a copy of the other one.
+    That is, if you choose to keep the old one, it will put the
+    new one alongside it with a "new" suffix to its name, whilst if
+    you choose to overwrite it will keep the old one with an "old"
+    suffix.
+
+    An effective policy is to accept all the new configuration files,
+    but keep a list of them as you go along.  Then go in afterwards
+    and edit the new files to re-install your local changes.  That
+    way you get any new configuration defaults too.  It tends to be
+    less work to put your changes in the new files, than to put all
+    the new bits into your old files.
+    
+
   Once those steps have completed you can re-boot your system and
   it should then be running Debian 9 (Stretch).
 
