@@ -28,6 +28,7 @@ Download this guide as a
    controls
    locations
    gaps
+   adhoc
    endofyear
    upgrades
    rubyupgrade
