@@ -64,7 +64,6 @@ You can then create your new Ad Hoc category using Menu => Admin => Ad Hoc t/ts
 and then click on "New category" which will give you a screen like this:
 
 .. image:: newadhoc.png
-   :scale: 75%
    :align: center
 
 Note that this form has been filled in using the records referenced previously.
@@ -77,14 +76,12 @@ Hit the "Create" button and you will be returned to the listing of Ad Hoc
 categories showing your newly created one.
 
 .. image:: adhoclisting.png
-   :scale: 75%
    :align: center
 
 Appoint at least one Controller for the category by clicking the "Change"
 button.
 
 .. image:: adhocaddcontroller.png
-   :scale: 75%
    :align: center
 
 In this case, the ubiquitous Simon Philpotts is taking on the rôle again.

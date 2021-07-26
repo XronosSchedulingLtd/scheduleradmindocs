@@ -73,14 +73,12 @@ dialogues.
 Menu => Admin => Models => Users
 
 .. image:: userlisting.png
-   :scale: 75%
    :align: center
 
 
 Clicking "Edit" for the user Claire Dunwoody produces the following:
 
 .. image:: clairedunwoody.png
-   :scale: 75%
    :align: center
 
 Notice that there are two tabs here, labelled "General" and "Concerns".
@@ -88,7 +86,6 @@ Click on the "Concerns" tab to see the existing links between
 CED and resources within the system.
 
 .. image:: cedconcerns.png
-   :scale: 75%
    :align: center
 
 CED is currently linked to four resources within the system.
@@ -123,14 +120,12 @@ required item and press Enter.
 CED then has an extra Concern, like this:
 
 .. image:: cedaddedminibus.png
-   :scale: 75%
    :align: center
 
 Click on the "Edit" link for the Minibus concern, and tick the
 "Controls" check box.
 
 .. image:: cedcontrolsmb.png
-   :scale: 75%
    :align: center
 
 Then click "Save changes" to put your change into effect.
