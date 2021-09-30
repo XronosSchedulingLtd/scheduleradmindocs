@@ -38,7 +38,7 @@ Each category needs:
 
 * A name - for instance, "Music lessons".
 * An event source - to identify all its lessons.
-* An event category in which to place its events - typically "Lesson".
+* An event category in which to place its events - typically "Ad Hoc Lesson".
 * A default day shape to define when lessons might occur.
 * An identifying Property - to allow users to select such lessons to view.
 
@@ -57,6 +57,14 @@ Day Shape which will then assist the controller of the Ad Hoc category in
 setting up individual availability records for each teacher.
 
 Create an Event Source using Menu => Admin => Models => Events => Sources
+
+Create an Event Category using Menu => Admin => Models => Events => Categories.
+It is important that Ad Hoc Lessons have their own category because they
+want slightly different flags from ordinary lessons.  When the nightly
+job runs to create lists of pupils who will be missing lessons, we want it
+to flag pupils who are missing ordinary lessons for Ad Hoc lessons, but
+not generally the other way around.  The whole point of Ad Hoc lessons is
+that they override the normal lessons.
 
 Create a new Property using Menu => Admin => Models => Properties
 
