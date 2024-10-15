@@ -142,13 +142,15 @@ For this simple case, your upgrade session should look like this:
 
   $ . ~/etc/whichsystem
   $ cd $SCHEDULER_DIR
-  $ sudo service nginx stop
+  $ bin/delayed_job stop
+  $ sudo systemctl stop puma
   [sudo] password for scheduler:
   $ git pull
   $ bundle install
   $ rake db:migrate
   $ rake assets:precompile
-  $ sudo service nginx start
+  $ sudo systemctl start puma
+  $ bin/delayed_job start
 
 Note that, unless you've taken a very long time over this, you won't be
 prompted for your password a second time.
@@ -209,7 +211,8 @@ all the new versions from GitHub:
 
   $ . ~/etc/whichsystem
   $ cd $SCHEDULER_DIR
-  $ sudo service nginx stop
+  $ bin/delayed_job stop
+  $ sudo systemctl stop puma
   [sudo] password for scheduler:
   $ git checkout v1.2.8
   $ git fetch
@@ -247,7 +250,8 @@ the system back into its original state with:
 .. code-block:: console
 
   $ git checkout master
-  $ sudo service nginx start
+  $ sudo systemctl start puma
+  $ bin/delayed_job start
 
 .. note::
 
